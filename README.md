@@ -122,26 +122,42 @@ Lowering the threshold improved the model’s ability to identify churners, whic
 
 ![Detailed Risk Segments](reports/figures/top_full_risk_segments_expected_churn.png)
 
-## Business Recommendations
 
-### Recommendation 1
 
-Target new month-to-month customers during their first year.
+## Stakeholder Recommendations & Business Action Plan
 
----
-
-### Recommendation 2
-
-Encourage customers to adopt longer-term contracts.
+### Executive Summary
+Based on the data analysis of 7,043 telecom customers, the overall churn rate is **26.54%** (1,869 churned customers). Churn is heavily concentrated among **new customers**, **month-to-month contract holders**, and **electronic check payment users**.
 
 ---
 
-### Recommendation 3
-
-Investigate why customers paying via electronic check churn significantly more often than customers using automatic payment methods.
+### High-Risk Segment Identification
+1. **Contract Type**: Month-to-month contract holders have a **42.71%** churn rate, compared to **11.27%** for 1-year and **2.83%** for 2-year contracts.
+2. **Tenure Window**: Customers in their first year (0–12 months) experience a **47.44%** churn rate, whereas tenure > 48 months drops to **9.51%**.
+3. **Payment Method**: Electronic check users churn at **45.29%**, with **78.22%** of them sitting on month-to-month plans.
+4. **Primary High-Risk Cohort**: Customers with **Month-to-Month + 0–12 Months Tenure + Electronic Check** hit a **63.10%** churn rate (954 customers, representing ~602 expected churns).
 
 ---
 
-### Recommendation 4
+### Strategic Action Plan
 
-Prioritize retention campaigns for customers with high monthly charges, as they represent the highest potential revenue loss.
+#### 1. Onboarding & Early Lifecycle Retention (Months 0–12)
+- **Implement a 90-Day VIP Onboarding Sequence**: Trigger automated check-ins at Day 30, 60, and 90 to identify service issues early.
+- **First-Year Renewal Incentives**: Offer loyalty perks or service add-on discounts at Month 6 to encourage tenure extension.
+
+#### 2. Contract Transition Strategy
+- **Annual Plan Upgrade Campaign**: Target month-to-month users with targeted pop-ups or email offers highlighting annual savings.
+- **Flexible Contract Options**: Test 6-month or hybrid contract options to bridge the gap between month-to-month and multi-year commitments.
+
+#### 3. Payment Method Migration
+- **Autopay Adoption Incentive**: Provide a one-time bill credit ($10–$15) to transition electronic check users to Automatic Bank Transfer or Credit Card billing.
+- **Billing Friction Audit**: Investigate potential UX/technical issues associated with electronic check processing that may cause dissatisfaction.
+
+---
+
+### Prioritized Target Matrix
+| Priority Level | Segment Description | Churn Rate | Primary Action |
+| :--- | :--- | :--- | :--- |
+| **Tier 1 (Critical)** | Month-to-Month + Tenure 0–12 mo + Electronic Check | **63.10%** | Immediate onboarding intervention & Autopay incentive |
+| **Tier 2 (High)** | Month-to-Month + Tenure 0–12 mo (All Payments) | **51.35%** | First-year contract conversion campaign |
+| **Tier 3 (Medium)** | Electronic Check (All Contracts) | **45.29%** | Payment method migration push |
